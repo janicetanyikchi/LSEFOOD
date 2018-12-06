@@ -1,0 +1,221 @@
+#h1_container{
+  display: inline-block;
+  height: 150px;
+  z-index: 1;
+  text-align: center;
+  margin-left: 380px;
+  position: relative;
+  margin-top: -25px;
+}
+
+h1 {
+  text-align: center;
+  font-family:"MS PGothic",Sans-Serif;
+  font-size: 100px;
+  border-top: 3px solid rgba(0,0,0,1);
+  border-bottom: 3px solid rgba(0,0,0,1);
+
+}
+
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin:5px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+/* Facebook */
+.fa-facebook {
+    background:#000000;
+    color: white;
+    border-radius: 50%;
+}
+
+/* Twitter */
+.fa-twitter {
+    background: #000000;
+    color: white;
+    border-radius: 50%;
+}
+
+/* Images */
+
+#images{
+  display: inline-block;
+
+  z-index: 0;position: relative;
+}
+
+#rig {
+    margin:0 auto; /*center aligned*/
+    padding:0;
+    font-size:0; /* Remember to change it back to normal font size if have captions */
+    list-style:none;
+}
+#rig li {
+    display: inline-block;
+    *display:inline;/*for IE6 - IE7*/
+    width:25%;
+    vertical-align:middle;
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+}
+
+/* The wrapper for each item */
+.rig-cell {
+    /*margin:12px;
+    box-shadow:0 0 6px rgba(0,0,0,0.3);*/
+    display:block;
+    position: relative;
+    object-fit: cover;
+    overflow:hidden;
+}
+
+/* If have the image layer */
+.rig-img {
+    display:block;
+    width: 400px;
+    height: 250px;
+    object-fit: cover;
+    border:none;
+    transform:scale(1);
+    transition:all 1s;
+
+}
+
+#rig li:hover .rig-img {
+    transform:scale(1.05);
+}
+
+.rig-overlay {
+    position: absolute;
+    display:block;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    background: #696969 url(img/link.png) no-repeat center 20%;
+    background-size:50px 50px;
+    opacity:0;
+    filter:alpha(opacity=0);/*For IE6 - IE8*/
+    transition:all 0.6s;
+}
+#rig li:hover .rig-overlay {
+    opacity:0.8;
+}
+
+.rig-text {
+    display:block;
+    padding:0 30px;
+    box-sizing:border-box;
+    position:absolute;
+    left:0;
+    width:100%;
+    text-align:center;
+    text-transform:capitalize;
+    font-size:30px;
+    font-weight:bold;
+    font-family: 'Oswald', sans-serif;
+    font-weight:normal!important;
+    top:40%;
+    color:white;
+    opacity:0;
+    filter:alpha(opacity=0);/*For older IE*/
+    transform:translateY(-20px);
+    transition:all .3s;
+}
+#rig li:hover .rig-text {
+    transform:translateY(0px);
+    opacity:0.9;
+}
+
+@media (max-width: 9000px) {
+    #rig li {
+        width:25%;
+    }
+}
+
+@media (max-width: 700px) {
+    #rig li {
+        width:33.33%;
+    }
+}
+
+@media (max-width: 550px) {
+    #rig li {
+        width:50%;
+    }
+}
+
+
+
+.bottombar {
+  display: block;
+  position: absolute;
+  justify-content: center;
+	align-items: center;
+  margin-left: 660px;
+
+}
+
+/* This is for category dropdown */
+.navbar-inverse .navbar-nav>li>a {
+    color: rgba(230,230,230,1);
+}
+
+.dropdown {
+  margin-left: -15px;
+}
+
+li a, .dropbtn {
+  display: inline-block;
+  color: rgba(230,230,230,0.9);
+  text-align: center;
+  /* padding: 14px 16px; */
+  text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+  background-color: black;
+  color: rgba(230,230,230,0.9);
+}
+
+li.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: black;
+  color:white;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+  opacity:inherit;
+}

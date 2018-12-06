@@ -1,0 +1,360 @@
+
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <link href='css/bootstrap.min.css' rel='stylesheet'/>
+	<link rel="stylesheet" href="LseFood2.2.css">
+	<meta name='viewport' content="width=device-width, initial-scale=1" />
+	<script src='js/jquery-3.3.1.min.js'></script>
+  <script src="js/LseFood.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <title> LSE Food</title>
+    <link rel="icon" href="img/hamburger.png"/>
+
+
+<!-- Topbar -->
+<div id="topbar" >
+
+  <div id="sidebar">
+    <div class="toggle-btn" onclick="toggleSidebar()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+      <ul>
+        <div id="about" onclick="toggleModal()">
+          <li> About </li>
+        </div>
+          <div id="suggestions" onclick="toggleModal2()">
+          <li> Nomination </li>
+        </div>
+        <div class="container">
+          <li class="dropdown">
+              <a href="javascript:void(0)" class="dropbtn">Category</a>
+              <div class="dropdown-content">
+                <a href="LseFoodPage2.2.html">£</a>
+                <a href="LseFoodPage2.3.html">££</a>
+                <a href="LseFoodPage2.4.html">£££</a>
+              </div>
+        </div>
+      </ul>
+</div>
+
+  <!-- Master -->
+<div id="h1_container">
+  <h1> LSE Food  </h1>
+</div>
+
+</div>
+
+<!-- Image Columns -->
+<div id ="images">
+<ul id="rig">
+    <li>
+        <a class="rig-cell" href="https://www.jdwetherspoon.com/pubs/all-pubs/england/london/shakespeares-head-holborn" target="_blank">
+            <img class="rig-img" src="img/1.jpg">
+            <span class="rig-overlay"></span>
+            <span class="rig-text">Shakesphere's Head</span>
+        </a>
+    </li>
+    <li>
+        <a class="rig-cell" href="https://www.byronhamburgers.com/restaurant/holborn" target="_blank">
+            <img class="rig-img" src="img/2.jpg">
+            <span class="rig-overlay"></span>
+            <span class="rig-text">Byron</span>
+        </a>
+    </li>
+    <li>
+        <a class="rig-cell" href="https://caffenero.com/uk/stores/high-holborn/" target="_blank">
+            <img class="rig-img" src="img/3.jpg">
+            <span class="rig-overlay"></span>
+            <span class="rig-text">Cafe Nero</span>
+        </a>
+    </li>
+    <li>
+        <a class="rig-cell" href="http://www.chachaantenguk.co.uk/#story" target="_blank">
+            <img class="rig-img" src="img/4.jpg">
+            <span class="rig-overlay"></span>
+            <span class="rig-text">Cha Chaan Teng</span>
+        </a>
+    </li>
+    <li>
+        <a class="rig-cell" href="http://www.chickenshop.com/en/holborn" target="_blank">
+            <img class="rig-img" src="img/5.jpg">
+            <span class="rig-overlay"></span>
+            <span class="rig-text">Chicken Shop Holborn</span>
+        </a>
+    </li>
+    <li>
+        <a class="rig-cell" href="https://www.itsu.com/location/high-holborn/" target="_blank">
+            <img class="rig-img" src="img/6.jpg">
+            <span class="rig-overlay"></span>
+            <span class="rig-text">Itsu</span>
+        </a>
+    </li>
+    <li>
+        <a class="rig-cell" href="http://www.thejapanesecanteen.co.uk/" target="_blank">
+            <img class="rig-img" src="img/7.jpg">
+            <span class="rig-overlay"></span>
+            <span class="rig-text">Japanese Canteen</span>
+        </a>
+    </li>
+    <li>
+        <a class="rig-cell" href="https://www.lundenwic.com/" target="_blank">
+            <img class="rig-img" src="img/8.jpg">
+            <span class="rig-overlay"></span>
+            <span class="rig-text">Ludenwic</span>
+        </a>
+    </li>
+    <li>
+        <a class="rig-cell" href="http://onthebab.com/" target="_blank">
+            <img class="rig-img" src="img/9.png">
+            <span class="rig-overlay"></span>
+            <span class="rig-text">On the Bap</span>
+        </a>
+    </li>
+    <li>
+        <a class="rig-cell" href="https://www.pod.co.uk/" target="_blank">
+            <img class="rig-img" src="img/10.jpg">
+            <span class="rig-overlay"></span>
+            <span class="rig-text">Pod</span>
+        </a>
+    </li>
+    <li>
+        <a class="rig-cell" href="https://www.pret.co.uk/en-gb/find-a-pret/280%20high%20holborn" target="_blank">
+            <img class="rig-img" src="img/11.jpg">
+            <span class="rig-overlay"></span>
+            <span class="rig-text">Pret A Manger</span>
+        </a>
+    </li>
+    <li>
+        <a class="rig-cell" href="https://www.rokarestaurant.com/" target="_blank">
+            <img class="rig-img" src="img/12.jpg">
+            <span class="rig-overlay"></span>
+            <span class="rig-text">Roka Aldywch</span>
+        </a>
+    </li>
+    <li>
+        <a class="rig-cell" href="https://bills-website.co.uk/restaurants/holborn" target="_blank">
+            <img class="rig-img" src="img/13.jpg">
+            <span class="rig-overlay"></span>
+            <span class="rig-text">Bill's</span>
+        </a>
+    </li>
+    <li>
+        <a class="rig-cell" href="https://www.tripadvisor.co.uk/Restaurant_Review-g186338-d6485104-Reviews-Thiwanya_Thai_Restaurant-London_England.html" target="_blank">
+            <img class="rig-img" src="img/14.jpg">
+            <span class="rig-overlay"></span>
+            <span class="rig-text">Thiwanya</span>
+        </a>
+    </li>
+    <li>
+        <a class="rig-cell" href="https://vieteat.co.uk/" target="_blank">
+            <img class="rig-img" src="img/15.jpg">
+            <span class="rig-overlay"></span>
+            <span class="rig-text">Viet Eat</span>
+        </a>
+    </li>
+    <li>
+        <a class="rig-cell" href="https://www.wasabi.uk.com/branches/1303" target="_blank">
+            <img class="rig-img" src="img/16.jpg">
+            <span class="rig-overlay"></span>
+            <span class="rig-text">Wasabi</span>
+        </a>
+    </li>
+    <li>
+        <a class="rig-cell" href="https://www.zomato.com/london/wrights-bar-aldwych" target="_blank">
+            <img class="rig-img" src="img/17.jpg">
+            <span class="rig-overlay"></span>
+            <span class="rig-text">Wright's Bar</span>
+        </a>
+    </li>
+    <li>
+        <a class="rig-cell" href="https://leon.co/restaurants/high-holborn/" target="_blank">
+            <img class="rig-img" src="img/18.jpg">
+            <span class="rig-overlay"></span>
+            <span class="rig-text">Leon</span>
+        </a>
+    </li>
+    <li>
+        <a class="rig-cell" href="https://www.mcdonalds.com/gb/en-gb.html" target="_blank">
+            <img class="rig-img" src="img/19.png">
+            <span class="rig-overlay"></span>
+            <span class="rig-text">McDonald's</span>
+        </a>
+    </li>
+    <li>
+        <a class="rig-cell" href="https://asadal.co.uk/" target="_blank">
+            <img class="rig-img" src="img/20.jpg">
+            <span class="rig-overlay"></span>
+            <span class="rig-text">Asadal</span>
+        </a>
+    </li>
+    <li>
+        <a class="rig-cell" href="https://www.hiba-express.co.uk/" target="_blank">
+            <img class="rig-img" src="img/21.jpg">
+            <span class="rig-overlay"></span>
+            <span class="rig-text">Hiba</span>
+        </a>
+    </li>
+    <li>
+        <a class="rig-cell" href="https://kimchee.uk.com/kimchee-holborn/" target="_blank">
+            <img class="rig-img" src="img/22.jpg">
+            <span class="rig-overlay"></span>
+            <span class="rig-text">KimChee</span>
+        </a>
+    </li>
+    <li>
+        <a class="rig-cell" href="http://www.myolddutch.com/" target="_blank">
+            <img class="rig-img" src="img/23.jpg">
+            <span class="rig-overlay"></span>
+            <span class="rig-text">My Old Dutch</span>
+        </a>
+    </li>
+    <li>
+        <a class="rig-cell" href="https://chickencottage.com/" target="_blank">
+            <img class="rig-img" src="img/24.jpg">
+            <span class="rig-overlay"></span>
+            <span class="rig-text">Chicken Cottage</span>
+        </a>
+    </li>
+    <li>
+        <a class="rig-cell" href="https://www.nandos.co.uk/restaurants/holborn" target="_blank">
+            <img class="rig-img" src="img/25.jpg">
+            <span class="rig-overlay"></span>
+            <span class="rig-text">Nando's</span>
+        </a>
+    </li>
+    <li>
+        <a class="rig-cell" href="https://www.eattokyo.co.uk/holborn" target="_blank">
+            <img class="rig-img" src="img/26.jpg">
+            <span class="rig-overlay"></span>
+            <span class="rig-text">Eat Tokyo</span>
+        </a>
+    </li>
+    <li>
+        <a class="rig-cell" href="https://hozi.business.site/" target="_blank">
+            <img class="rig-img" src="img/27.jpg">
+            <span class="rig-overlay"></span>
+            <span class="rig-text">Hozi</span>
+        </a>
+    </li>
+    <li>
+        <a class="rig-cell" href="http://cantonelement.co.uk/" target="_blank">
+            <img class="rig-img" src="img/28.jpg">
+            <span class="rig-overlay"></span>
+            <span class="rig-text">Canton Element</span>
+        </a>
+    </li>
+    <li>
+        <a class="rig-cell" href="https://www.pizzaexpresslive.com/whats-on/then-jerico-acoustic" target="_blank">
+            <img class="rig-img" src="img/29.jpg">
+            <span class="rig-overlay"></span>
+            <span class="rig-text">Sammy Express</span>
+        </a>
+    </li>
+    <li>
+        <a class="rig-cell" href="https://www.tripadvisor.co.uk/Restaurant_Review-g186338-d3613216-Reviews-Chang_s_Noodles-London_England.html" target="_blank">
+            <img class="rig-img" src="img/30.jpg">
+            <span class="rig-overlay"></span>
+            <span class="rig-text">Chang's Noodles</span>
+        </a>
+    </li>
+    <li>
+        <a class="rig-cell" href="https://www.subway.com/en-GB" target="_blank">
+            <img class="rig-img" src="img/31.jpg">
+            <span class="rig-overlay"></span>
+            <span class="rig-text">Subway</span>
+        </a>
+    </li>
+    <li>
+        <a class="rig-cell" href="https://www.tripadvisor.co.uk/ShowUserReviews-g186338-d5093989-r491831535-Burger_King-London_England.html" target="_blank">
+            <img class="rig-img" src="img/32.jpg">
+            <span class="rig-overlay"></span>
+            <span class="rig-text">Burger King</span>
+        </a>
+    </li>
+    <li>
+        <a class="rig-cell" href="https://wellbeing-kitchen.business.site/" target="_blank">
+            <img class="rig-img" src="img/33.jpg">
+            <span class="rig-overlay"></span>
+            <span class="rig-text">Well Being Kitchen</span>
+        </a>
+    </li>
+    <li>
+        <a class="rig-cell" href="https://www.wrapitup.co.uk/london-holborn/" target="_blank">
+            <img class="rig-img" src="img/34.jpg">
+            <span class="rig-overlay"></span>
+            <span class="rig-text">Wrap It Up!</span>
+        </a>
+    </li>
+    <li>
+        <a class="rig-cell" href="https://www.jdwetherspoon.com/pubs/all-pubs/england/london/the-knights-templar-near-fleet-street" target="_blank">
+            <img class="rig-img" src="img/35.jpg">
+            <span class="rig-overlay"></span>
+            <span class="rig-text">The Knight's Templar</span>
+        </a>
+    </li>
+    <li>
+        <a class="rig-cell" href="https://www.honestburgers.co.uk/locations/holborn/" target="_blank">
+            <img class="rig-img" src="img/36.jpg">
+            <span class="rig-overlay"></span>
+            <span class="rig-text">Honest Burgers</span>
+        </a>
+    </li>
+</ul>
+
+</div>
+
+<!-- About - Modal Section -->
+
+<div class="bg-modal">
+	<div class="modal-contents">
+    <img class="modal-img" src="img/fork.png">
+    <p>
+      Welcome to LSE Food! This is a page for
+      sincere, genuine, and dedicated LSE foodies.
+      We share food and restaurants that are
+      within walking distance from LSE.
+    </p>
+
+		<div id="close" onclick="toggleClose()">+</div>
+		<img src="https://richardmiddleton.me/comic-100.png" alt="">
+
+
+  </div>
+</div>
+
+
+<!-- SUGGESTIONS-MODAL SECTION -->
+<div class="bg-modal-2">
+	<div class="modal-contents-2">
+    <img class="modal-img-2" src="img/fork.png">
+    <p>
+      Suggest your favourite restaurant <br> to be featured on the page!
+    </p>
+
+		<div id="close-2" onclick="toggleClose2()">+</div>
+		<img src="https://richardmiddleton.me/comic-100.png" alt="">
+
+		<form action="">
+			<input type="text" placeholder="My Favourite Restaurant!">
+			<a href="#" class="button">Submit</a>
+		</form>
+
+  </div>
+</div>
+
+<!-- ICON -->
+<div class="bottombar">
+  <div id="icon">
+      <!-- Add icon library -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+      <!-- Add font awesome icons -->
+      <a href="#" class="fa fa-facebook"></a>
+      <a href="#" class="fa fa-twitter"></a>
+
+  </div>
+</div>
